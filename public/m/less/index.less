@@ -1,0 +1,135 @@
+@import "base.less";
+
+#main{
+    // padding-top: 45px;
+    background-color: #fff;
+    // padding-bottom:45px;
+
+// nav的样式
+ #nav{
+     padding:10px;
+     a{
+         display:block;
+         img{
+             width:100%;
+         }
+     }
+ }
+// 广告区域
+#banner{
+    padding:0px 10px;
+    .left{
+        >a{
+            display: block;
+            >img{
+                width:50%;
+            float:left;
+            }
+        }
+    }
+    .right{
+        >a{
+            display: block;
+            >img{
+                width:100%;
+                height:242px;
+            }
+        }
+    }
+}
+// 品牌区域
+#brand{
+    padding:10px;
+    .title{
+       a{
+           display: block;
+           >img{
+               width:100%;
+           }
+       }   
+    }
+    .content{
+        a{
+           display:block;
+            >img{
+                width:100%;
+            }
+        }
+    }
+}
+// 运动生活专区
+#sport,#women,#man{
+    padding:10px;
+    .title{
+        a{
+            display: block;
+            >img{
+                width:100%;
+            }
+        }
+    }
+    .content{
+        .mui-row{
+            >div{
+                padding:0px 5px;
+                &:nth-of-type(n+3){
+                    .product{
+                        margin-top:10px;
+                    }    
+                }
+                .product{
+                    padding-bottom:10px;
+                    text-align: center;
+                    box-shadow: 1px 1px 2px #ccc;
+                    
+                     >  .product-img{
+                           display: block;
+                           > img{
+                               width:100%;
+                           }
+                       }
+                     .product-name{
+                         padding:0 10px;
+                         font-size:14px;
+                     }
+                     .product-price{
+                         >span{
+                             font-size:12px;
+                             color:red;
+                         }
+                         >del{
+                             font-size:12px;
+                         }
+                     }
+                   }
+
+            }
+            
+        }
+        .product{
+         text-align: center;
+         box-shadow: 1px 1px 2px #ccc;
+         
+          >  .product-img{
+                display: block;
+                > img{
+                    width:100%;
+                }
+            }
+          .product-name{
+              padding:0 10px;
+              font-size:14px;
+          }
+          .product-price{
+              >span{
+                  font-size:12px;
+                  color:red;
+              }
+              >del{
+                  font-size:12px;
+              }
+          }
+        }
+    }
+}
+}
